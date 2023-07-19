@@ -1,5 +1,7 @@
 /* common shared styles */
 * {
+    margin: 0px;
+    padding: 0px;
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -86,9 +88,7 @@ nav {
     padding-right: 100px;
 }
 
-/* .banner-content{
-    padding: 150px 300px;
-} */
+
 .banner-heading {
     color: #0B0223;
     text-align: center;
@@ -149,7 +149,7 @@ nav {
 /* gamers section styles */
 .gamers {
     display: flex;
-    gap: 50px;
+    gap: 0px;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     padding: 60px 250px;
     align-items: center;
@@ -173,4 +173,100 @@ nav {
     color: #534C64;
     font-size: 32px;
     font-weight: 700;
+}
+
+/* online games card */
+.online-games {
+    margin: 100px 0px;
+}
+
+.online-games-title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.games-para {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.online-games-card {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.games-span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* play games section */
+.play-games{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 120px 230px;
+}
+.games-title{
+    text-align: left;
+}
+.online-para{
+    text-align: left;
+}
+.play-span{
+    color: #F948B2;
+}
+.play-games-image-2{
+    position: relative;
+    top: -250px;
+    left: 550px;
+}
+.play-games-para{
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+/* Responsive media queries */
+@media screen and (max-width:576px) {
+    nav {
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .nav-section-items {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .banner {
+        flex-direction: column;
+        background-size: contain;
+    }
+
+    .gamers {
+        flex-direction: column;
+    }
+
+    .banner-image-1 {
+        width: 100%;
+    }
+
+    .gamers-content {
+        align-items: center;
+
+    }
+
+    .gamers-image-1 {
+        width: 100%;
+    }
+
+    .gamers-title {
+        font-size: 15px;
+    }
+
 }
