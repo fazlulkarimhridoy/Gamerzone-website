@@ -33,7 +33,7 @@ nav {
   list-style: none;
 }
 
-.nav-section > ul {
+.nav-section>ul {
   align-items: center;
 }
 
@@ -150,11 +150,9 @@ nav {
   display: flex;
 
   gap: 40;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 66, 165, 0.03) 0%,
-    rgba(255, 66, 165, 0.03) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 66, 165, 0.03) 0%,
+      rgba(255, 66, 165, 0.03) 100%);
   align-items: center;
   justify-content: center;
   padding: 60px 250px;
@@ -249,11 +247,9 @@ nav {
 .game-names-section {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 66, 165, 0.03) 0%,
-    rgba(255, 66, 165, 0.03) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 66, 165, 0.03) 0%,
+      rgba(255, 66, 165, 0.03) 100%);
   align-items: center;
   margin-top: 200px;
   padding: 150px 80px;
@@ -274,6 +270,7 @@ nav {
   color: #f948b2;
   border: 2px solid #f948b2;
 }
+
 .game-names-section div :hover {
   border: none;
 }
@@ -335,9 +332,11 @@ footer {
   font-weight: 500;
   padding-bottom: 100px;
 }
+
 .footer-br {
   display: none;
 }
+
 
 /* Responsive media queries */
 @media (max-width: 576px) {
@@ -370,7 +369,8 @@ footer {
     font-size: 10px;
     border-radius: 20px;
   }
-  .know-more{
+
+  .know-more {
     margin-right: 100px;
   }
 
@@ -451,22 +451,26 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     padding: 50px 20px;
   }
+
   .footer-names {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
+
   .footer-icons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     justify-items: center;
   }
+
   .footer-description {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
+
   footer {
     padding: 0px 50px;
     /* width: 100%; */
@@ -491,32 +495,40 @@ footer {
   .game-names img {
     width: 30px;
   }
+
   .game-names {
     font-size: 8px;
   }
+
   .games-title {
     text-align: center;
     font-size: 30px;
   }
-  .online-para{
+
+  .online-para {
     text-align: center;
     font-size: 12px;
   }
-  .shared-para{
+
+  .shared-para {
     text-align: center;
     font-size: 12px;
   }
-  .slogan-title{
+
+  .slogan-title {
     text-align: center;
   }
-  .slogan{
+
+  .slogan {
     text-align: center;
     font-size: 20px;
   }
+
   .online-games-title {
     font-size: 25px;
   }
-  .card-description{
+
+  .card-description {
     text-align: center;
     font-size: 12px;
   }
