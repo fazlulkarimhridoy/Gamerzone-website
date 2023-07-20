@@ -33,7 +33,7 @@ nav {
   list-style: none;
 }
 
-.nav-section>ul {
+.nav-section > ul {
   align-items: center;
 }
 
@@ -116,7 +116,6 @@ nav {
 
 .para {
   display: flex;
-
   gap: 10px;
 }
 
@@ -151,9 +150,11 @@ nav {
   display: flex;
 
   gap: 40;
-  background: linear-gradient(90deg,
-      rgba(255, 66, 165, 0.03) 0%,
-      rgba(255, 66, 165, 0.03) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
   align-items: center;
   justify-content: center;
   padding: 60px 250px;
@@ -217,7 +218,8 @@ nav {
   justify-content: center;
   align-items: center;
   margin: 30px 0px;
-
+  clear: both;
+  padding-bottom: 200px;
 }
 
 .games-title {
@@ -231,7 +233,6 @@ nav {
 .play-span {
   color: #f948b2;
 }
-
 
 .play-games-image-2 {
   position: relative;
@@ -248,22 +249,37 @@ nav {
 .game-names-section {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+  align-items: center;
   margin-top: 200px;
-  padding: 50px 100px;
-
+  padding: 150px 80px;
+  margin: 0px auto;
+  gap: 10px;
 }
 
 .game-names {
   display: flex;
   align-items: center;
   gap: 10px;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 50px;
+  background-color: white;
+}
 
+.game-names-section :hover {
+  color: #f948b2;
+  border: 2px solid #f948b2;
+}
+.game-names-section div :hover {
+  border: none;
 }
 
 footer {
-  background: #0B0223;
+  background: #0b0223;
 }
 
 .amar {
@@ -284,7 +300,7 @@ footer {
 }
 
 .names-serial {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 18px;
   font-weight: 600;
@@ -298,7 +314,7 @@ footer {
 }
 
 .description-1 {
-  color: rgba(255, 255, 255, 0.60);
+  color: rgba(255, 255, 255, 0.6);
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -313,10 +329,14 @@ footer {
 }
 
 .footer-para {
-  color: rgba(255, 255, 255, 0.60);
+  color: rgba(255, 255, 255, 0.6);
   text-align: center;
   font-size: 16px;
   font-weight: 500;
+  padding-bottom: 100px;
+}
+.footer-br {
+  display: none;
 }
 
 /* Responsive media queries */
@@ -339,6 +359,7 @@ footer {
 
   .banner-heading {
     font-size: 20px;
+    padding-top: 15px;
   }
 
   .banner-title {
@@ -348,6 +369,9 @@ footer {
   .btn-pink {
     font-size: 10px;
     border-radius: 20px;
+  }
+  .know-more{
+    margin-right: 100px;
   }
 
   .btn-sky {
@@ -375,7 +399,8 @@ footer {
   }
 
   .gamers-title {
-    font-size: 15px;
+    font-size: 25px;
+    text-align: center;
   }
 
   .online-games-card {
@@ -384,6 +409,7 @@ footer {
 
   .play-games {
     flex-direction: column-reverse;
+    padding-bottom: 50px;
   }
 
   /* optional */
@@ -411,14 +437,88 @@ footer {
   }
 
   .play-games-para {
-    margin-top: 110px;
+    margin-top: -20px;
     margin-left: 0px !important;
     padding-left: 20px;
+  }
 
+  .footer-br {
+    display: inline;
   }
 
   .game-names-section {
     margin-top: 50px;
     grid-template-columns: repeat(3, 1fr);
+    padding: 50px 20px;
   }
+  .footer-names {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .footer-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+  }
+  .footer-description {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  footer {
+    padding: 0px 50px;
+    /* width: 100%; */
+  }
+
+  .names-serial {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .description-1 {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .footer-para {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;
+  }
+
+  .game-names img {
+    width: 30px;
+  }
+  .game-names {
+    font-size: 8px;
+  }
+  .games-title {
+    text-align: center;
+    font-size: 30px;
+  }
+  .online-para{
+    text-align: center;
+    font-size: 12px;
+  }
+  .shared-para{
+    text-align: center;
+    font-size: 12px;
+  }
+  .slogan-title{
+    text-align: center;
+  }
+  .slogan{
+    text-align: center;
+    font-size: 20px;
+  }
+  .online-games-title {
+    font-size: 25px;
+  }
+  .card-description{
+    text-align: center;
+    font-size: 12px;
+  }
+
 }
